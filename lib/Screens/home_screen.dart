@@ -221,7 +221,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontSize: size.height * 0.025,
                       fontWeight: FontWeight.bold,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),

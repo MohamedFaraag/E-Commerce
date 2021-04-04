@@ -51,8 +51,9 @@ class Product extends StatelessWidget {
                       child: Text(
                         name,
                         style: TextStyle(
-                            fontSize: size.height * 0.020,
-                            fontWeight: FontWeight.bold),
+                          fontSize: size.height * 0.020,
+                          fontWeight: FontWeight.bold,
+                        ),
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
@@ -71,16 +72,17 @@ class Product extends StatelessWidget {
                       child: Text(
                         '\$' + '$price',
                         style: TextStyle(
-                            fontSize: size.height * 0.020,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.green.shade500),
+                          fontSize: size.height * 0.020,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.green.shade500,
+                        ),
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
                   ]),
                 ],
               ),
-            ))
+            )),
           ],
         ),
       ),

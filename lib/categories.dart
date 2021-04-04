@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Gat extends StatelessWidget {
-  const Gat(
-      {Key key,
-      @required this.size,
+  Gat(
+      {@required this.size,
       @required this.cat,
       @required this.iconData,
-      @required this.function})
-      : super(key: key);
+      @required this.function});
+
   final Size size;
   final String cat;
   final IconData iconData;
@@ -30,11 +29,14 @@ class Gat extends StatelessWidget {
             ),
           ),
           Center(
-              child: Text(
-            cat,
-            style: TextStyle(
-                fontSize: size.height * 0.020, fontWeight: FontWeight.bold),
-          ))
+            child: Text(
+              cat,
+              style: TextStyle(
+                fontSize: size.height * 0.020,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
         ],
       ),
     );

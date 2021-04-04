@@ -12,11 +12,17 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-        return HomeScreen();
-      }));
-    });
+    Timer(
+      Duration(seconds: 3),
+      () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) {
+            return HomeScreen();
+          }),
+        );
+      },
+    );
   }
 
   @override
@@ -29,7 +35,9 @@ class _SplashScreenState extends State<SplashScreen> {
           width: size.height * 0.4,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/shopping.png'),
+              image: AssetImage(
+                'images/shopping.png',
+              ),
               fit: BoxFit.contain,
             ),
           ),

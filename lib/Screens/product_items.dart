@@ -2,7 +2,10 @@ import 'package:ecommerce/product.dart';
 import 'package:flutter/material.dart';
 
 class Items extends StatelessWidget {
-  Items({@required this.title, @required this.product});
+  Items({
+    @required this.title,
+    @required this.product,
+  });
 
   final String title;
   final List<Product> product;
@@ -39,7 +42,9 @@ class Items extends StatelessWidget {
             shrinkWrap: true,
             scrollDirection: Axis.vertical,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2, childAspectRatio: 0.65),
+              crossAxisCount: 2,
+              childAspectRatio: 0.65,
+            ),
             itemBuilder: (context, index) => product[index],
           ),
         ),
