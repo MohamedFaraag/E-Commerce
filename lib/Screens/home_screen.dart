@@ -1,4 +1,3 @@
-import 'package:ecommerce/bottom_nav.dart';
 import 'package:ecommerce/categories.dart';
 import 'package:ecommerce/product.dart';
 import 'product_items.dart';
@@ -182,6 +181,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -333,7 +334,29 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: Bottom(size: size),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.grey.shade300,
+        currentIndex: currentIndex,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.explore),
+            label: 'Explore',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart_outlined),
+            label: 'Cart',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
+        onTap: (value) {
+          setState(() {
+            currentIndex = value;
+          });
+        },
+      ),
     );
   }
 }
