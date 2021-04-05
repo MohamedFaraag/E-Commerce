@@ -35,20 +35,25 @@ class Items extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(size.height * 0.0125),
-          child: GridView.builder(
-            itemCount: product.length,
-            shrinkWrap: true,
-            scrollDirection: Axis.vertical,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 0.65,
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.all(size.height * 0.0125),
+              child: GridView.builder(
+                itemCount: product.length,
+                physics: ScrollPhysics(),
+                shrinkWrap: true,
+                scrollDirection: Axis.vertical,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  childAspectRatio: 0.65,
+                ),
+                itemBuilder: (context, index) => product[index],
+              ),
             ),
-            itemBuilder: (context, index) => product[index],
-          ),
+          ],
         ),
-        physics: ScrollPhysics(),
       ),
     );
   }

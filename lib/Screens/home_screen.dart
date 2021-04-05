@@ -1,3 +1,4 @@
+import 'package:ecommerce/drawer.dart';
 import 'package:ecommerce/categories.dart';
 import 'package:ecommerce/product.dart';
 import 'product_items.dart';
@@ -229,8 +230,8 @@ class _HomeScreenState extends State<HomeScreen> {
               height: size.height * 0.035,
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: size.width * 0.025),
-              height: size.width * 0.25,
+              margin: EdgeInsets.symmetric(horizontal: size.height * 0.025),
+              height: size.height * 0.15,
               //height: size.height * 0.1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -334,6 +335,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+      drawer: Draw(size: size),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.grey.shade300,
         currentIndex: currentIndex,
