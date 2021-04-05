@@ -1,4 +1,4 @@
-import 'package:ecommerce/Screens/drawer_items.dart';
+import 'package:ecommerce/drawer_items.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -17,21 +17,21 @@ class Draw extends StatelessWidget {
           DrawerHeader(
             child: Center(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    Image.asset(
-                      'images/shopping.png',
-                      fit: BoxFit.contain,
-                      height: size.height * 0.1,
-                    ),
-                    Text(
-                      'E-Commerce',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: size.height * 0.04, color: Colors.black),
-                    ),
-                  ],
-                )),
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                Image.asset(
+                  'images/shopping.png',
+                  fit: BoxFit.contain,
+                  height: size.height * 0.1,
+                ),
+                Text(
+                  'E-Commerce',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: size.height * 0.04, color: Colors.black),
+                ),
+              ],
+            )),
             decoration: BoxDecoration(
               color: Colors.grey.shade300,
             ),

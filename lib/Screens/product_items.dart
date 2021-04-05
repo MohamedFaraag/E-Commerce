@@ -1,5 +1,4 @@
 import 'package:ecommerce/product.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Items extends StatelessWidget {

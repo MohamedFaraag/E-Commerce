@@ -1,4 +1,4 @@
-import 'package:ecommerce/Screens/drawer.dart';
+import 'package:ecommerce/drawer.dart';
 import 'package:ecommerce/categories.dart';
 import 'package:ecommerce/product.dart';
 import 'product_items.dart';
