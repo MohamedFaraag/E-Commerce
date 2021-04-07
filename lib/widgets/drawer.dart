@@ -1,4 +1,4 @@
-import 'package:ecommerce/drawer_items.dart';
+import 'package:ecommerce/widgets/drawer_items.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -20,7 +20,7 @@ class Draw extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Image.asset(
-                  'images/shopping.png',
+                  'assets/images/shopping.png',
                   fit: BoxFit.contain,
                   height: size.height * 0.1,
                 ),
